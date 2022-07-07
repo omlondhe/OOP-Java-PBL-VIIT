@@ -13,7 +13,7 @@ class FileOperation {
 	boolean saved;
 	boolean newFileFlag;
 	String fileName;
-	String applicationTitle = "JavaPad";
+	String applicationTitle = "JavaNotes";
 
 	File fileRef;
 	JFileChooser chooser;
@@ -225,7 +225,7 @@ public class Notepad implements ActionListener, MenuConstants {
 	JLabel statusBar;
 
 	private String fileName = "Unsaved";
-	String applicationName = "JavaPad";
+	String applicationName = "JavaNotes";
 
 	String searchString, replaceString;
 	int lastSearchIndex;
@@ -426,7 +426,7 @@ public class Notepad implements ActionListener, MenuConstants {
 		}
 		// Help click handler
 		else if (cmdText.equals(helpAboutNotepad))
-			JOptionPane.showMessageDialog(Notepad.this.f, aboutText, "About this JavaPad!",
+			JOptionPane.showMessageDialog(Notepad.this.f, aboutText, "About this JavaNotes!",
 					JOptionPane.INFORMATION_MESSAGE);
 		// Handling else condition
 		else
@@ -617,9 +617,9 @@ interface MenuConstants {
 
 	final String viewStatusBar = "Status Bar";
 
-	final String helpAboutNotepad = "About Javapad";
+	final String helpAboutNotepad = "About JavaNotes";
 
-	final String aboutText = "<html><big>JavaPad</big><hr>"
+	final String aboutText = "<html><big>JavaNotes</big><hr>"
 			+ "<p align=left>A multi-platform Notepad!"
 			+ "<hr><p align=left>Developed by:<br><br>"
 			+ "<strong>221092 22120276 Om Prashant Londhe</strong><br>"
